@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <script language=""javascript"">
+
+   window.onload = function(){    
+
+
+       reSize(400,500);         
+    }
+
+function reSize(x,y){
+  console.log(screen.availWidth,screen.availHeight);
+
+        if(x>screen.availWidth) x=screen.availWidth
+
+        if(y>screen.availHeight) y=screen.availHeight
+
+        window.top.resizeTo(x,y);   
+
+        window.top.moveTo(0,0);   
+
+   }
+   </script>
+  	<script src="jquery-latest.min.js"></script>
+    <script src="p5.js"></script>
+    <script src="jquery.js"></script>
+    <script language="javascript" src="sketch.js"></script>
+    <link rel="stylesheet" href="flipclock.css">
+  
+
+
+    <style> 
+     body {padding: 0; margin: 0;} 
+     img{
+      position:absolute;
+      left:0px;
+      top:0px;
+      z-index:-1
+
+     }
+
+
+     #myContainer{
+      position:absolute;
+      z-index:1
+     }
+
+     .clock{ 
+      position:absolute;
+      z-index:2
+     }
+    #serial-port{
+      position:absolute;
+      bottom: 25px
+
+    }
+
+    #status{
+      position:absolute;
+      bottom: 10px
+
+    }
+    .clock{
+      padding: 10px;
+      
+    }
+
+
+    </style>
+
+  </head>
+  <body>
+
+
+  
+    <a href="skype:liewbaby123?call" target="_blank">
+
+    <img src="baby.jpg" alt="photo of your loved one" style="width:100%;height:100%">
+
+    </a>
+
+    <script src="flipclock.js"></script>
+    <script src="base.js"></script>
+    <div class="clock"></div>
+  
+
+
+   <script src="script.js"></script>
+    <a href="skype:liewbaby123?call" target="_blank"></a>
+    <div id='myContainer'></div>
+
+    <div id='serial-port'></div>
+    <div id='status'></div>
+
+
+
+  </body>
+</html>
